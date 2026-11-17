@@ -2,96 +2,231 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dota 2 News - Práctica CSS</title>
+    <title>Dota 2 - Portal Oficial del Jugador</title>
+    
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
+        /* 1. CONFIGURACIÓN GENERAL */
         body {
-            background-color: rgb(240, 240, 240);
-            font-family: Arial, sans-serif;
+            background-color: #0e1013; /* Negro azulado muy profundo */
+            color: #d8dce3;            /* Texto gris muy claro para lectura cómoda */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        #cabecera-principal {
-            background-color: #2b2b2b;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: red;
-        }
-
-        #menu-navegacion {
-            background-color: #1a1a1a;
-            padding: 10px;
+        /* 2. BARRA DE NAVEGACIÓN SUPERIOR */
+        nav {
+            background-color: #16191e;
+            padding: 15px 30px;
+            border-bottom: 2px solid #9e2a2b; /* Línea roja elegante */
             text-align: center;
         }
 
-        #noticias {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase; /* Convierte el texto a mayúsculas */
         }
-        .noticia {
-            background-color: white;
-            border: 2px solid #333333;
-            padding: 15px;
-            margin: 15px 0;
+
+        nav a:hover {
+            color: #e09f3e; /* Cambia a dorado al pasar el ratón */
+        }
+
+        /* 3. PORTADA PRINCIPAL (HERO) */
+        .portada {
+            background-color: #1c2026;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 1px solid #2d333b;
+        }
+
+        .portada h1 {
+            color: #ffffff;
+            font-size: 42px;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+
+        .portada p {
+            color: #a0aab8;
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+        }
+
+        /* Estilo para la imagen principal de portada */
+        .imagen-portada {
             width: 100%;
+            max-width: 850px;
+            height: 350px;
+            object-fit: cover; /* Evita que la foto se deforme o estire */
+            border-radius: 10px;
+            border: 2px solid #e09f3e; /* Marco dorado */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* Sombra profunda */
         }
-        .noticia h3 {
-            color: darkred;
+
+        /* 4. CONTENEDOR CENTRAL */
+        .contenedor {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .titulo-seccion {
+            color: #e09f3e;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #2d333b;
+            padding-bottom: 10px;
+        }
+
+        /* 5. TARJETAS DE HÉROES (Alineadas una al lado de la otra) */
+        .galeria-heroes {
+            display: flex;          /* Coloca las tarjetas en fila horizontal */
+            justify-content: space-between;
+            gap: 20px;              /* Espacio entre cada tarjeta */
+            flex-wrap: wrap;        /* Si la pantalla es pequeña, bajan solas */
+        }
+
+        .tarjeta-heroe {
+            background-color: #181b20;
+            border: 1px solid #2d333b;
+            border-radius: 8px;
+            width: 30%;             /* Cada tarjeta ocupa casi un tercio del ancho */
+            min-width: 260px;
+            overflow: hidden;       /* Recorta la imagen para que respete los bordes redondeados */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .tarjeta-heroe img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 3px solid #9e2a2b;
+        }
+
+        .contenido-tarjeta {
+            padding: 20px;
+        }
+
+        .contenido-tarjeta h3 {
+            margin-top: 0;
+            color: #ffffff;
             font-size: 20px;
         }
-        .categoria {
-            background-color: lightgray;
-            padding: 3px 6px;
+
+        /* Etiqueta de atributo (Fuerza, Agilidad, Inteligencia) */
+        .etiqueta {
+            display: inline-block;
+            background-color: #9e2a2b;
+            color: white;
             font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
             font-weight: bold;
         }
-        #pie-pagina {
-            background-color: #2b2b2b;
-            color: white;
+
+        /* 6. CAJA DE INFORMACIÓN EXTRA */
+        .caja-mapa {
+            background-color: #181b20;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border-left: 5px solid #e09f3e;
+        }
+
+        /* 7. PIE DE PÁGINA */
+        footer {
+            background-color: #090a0c;
+            color: #6c757d;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            padding: 25px;
+            margin-top: 50px;
+            border-top: 1px solid #1f242b;
         }
     </style>
 </head>
 <body>
-    <header id="cabecera-principal">
-        <h1>Dota 2 News</h1>
-        <p>El portal oficial de la comunidad de Dota 2</p>
-    </header>
 
-    <nav id="menu-navegacion">
-        <a href="#">Inicio</a>
-        <a href="#">Parches</a>
-        <a href="#">Esports</a>
-        <a href="#">Guías</a>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#heroes">Héroes Destacados</a>
+        <a href="#objetivo">El Objetivo</a>
     </nav>
-    <main id="noticias">
+
+    <!-- SECCIÓN DE PORTADA -->
+    <section id="inicio" class="portada">
+        <h1>EL CAMPO DE BATALLA DE LOS ANCESTROS</h1>
+        <p>Más de 120 héroes únicos, estrategia infinita y trabajo en equipo puro. Cada partida es una historia completamente nueva.</p>
         
-        <h2>Últimas noticias</h2>
-        <div class="noticia">
-            <span class="categoria">Parches</span>
-            <h3>¡Lanzamiento del parche 7.36!</h3>
-            <p>Valve ha implementado cambios masivos en las habilidades de todos los héroes. <strong class="texto-destacado">Revisa las notas del parche</strong> antes de entrar a ranked y visita el <a href="#">enlace oficial</a>.</p>
-        </div>
-        <div class="noticia">
-            <span class="categoria">Esports</span>
-            <h3>The International: Calendario oficial</h3>
-            <p>Descubre los enfrentamientos de la fase de grupos y los horarios para no perderte ningún mapa de tus equipos favoritos.</p>
+        <!-- AQUÍ VA TU FOTO PRINCIPAL (Por ejemplo, una imagen panorámica del mapa o batalla) -->
+        <img src="portada-dota.jpg" alt="Batalla épica en Dota 2" class="imagen-portada">
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenedor">
+
+        <!-- SECCIÓN DE 3 HÉROES -->
+        <h2 id="heroes" class="titulo-seccion">Héroes Emblemáticos</h2>
+        
+        <div class="galeria-heroes">
+            
+            <!-- TARJETA 1 -->
+            <div class="tarjeta-heroe">
+                <!-- AQUÍ VA LA FOTO DEL HÉROE 1 -->
+                <img src="heroe1.jpg" alt="Foto del Héroe 1">
+                <div class="contenido-tarjeta">
+                    <span class="etiqueta">AGILIDAD</span>
+                    <h3>Juggernaut</h3>
+                    <p>Un maestro espadachín que corta a sus enemigos con velocidad letal y se vuelve invulnerable a la magia mientras gira.</p>
+                </div>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="tarjeta-heroe">
+                <!-- AQUÍ VA LA FOTO DEL HÉROE 2 -->
+                <img src="heroe2.jpg" alt="Foto del Héroe 2">
+                <div class="contenido-tarjeta">
+                    <span class="etiqueta">INTELIGENCIA</span>
+                    <h3>Invoker</h3>
+                    <p>Un mago erudito capaz de combinar tres elementos básicos (Quas, Wex y Exort) para conjurar diez hechizos distintos.</p>
+                </div>
+            </div>
+
+            <!-- TARJETA 3 -->
+            <div class="tarjeta-heroe">
+                <!-- AQUÍ VA LA FOTO DEL HÉROE 3 -->
+                <img src="heroe3.jpg" alt="Foto del Héroe 3">
+                <div class="contenido-tarjeta">
+                    <span class="etiqueta">FUERZA</span>
+                    <h3>Axe</h3>
+                    <p>Un guerrero imparable que obliga a sus enemigos a atacarlo mientras desata poderosos contraataques con su hacha.</p>
+                </div>
+            </div>
+
         </div>
 
-    </main>
-    <footer id="pie-pagina">
-        <p>&copy; 2026 Dota 2 News - PedriJPC</p>
+        <!-- SECCIÓN DEL OBJETIVO DEL JUEGO -->
+        <div id="objetivo" class="caja-mapa">
+            <h2>La Regla de Oro: Destruye el Ancestro</h2>
+            <p>
+                No importa cuántas eliminaciones consiga tu equipo si no logran derribar las torres enemigas. 
+                El mapa está dividido por un río central en dos facciones: <strong>Radiant</strong> (al suroeste) y <strong>Dire</strong> (al noreste). 
+                Controlar la visión del mapa, asegurar las runas de poder y coordinar las habilidades definitivas son las claves para alcanzar la victoria.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Diseñado con HTML y CSS estándar • Proyecto Web Dota 2</p>
     </footer>
 
 </body>
