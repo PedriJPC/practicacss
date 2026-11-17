@@ -5,20 +5,20 @@
     <title>Dota 2 - Portal Oficial del Jugador</title>
     
     <style>
-        /* 1. CONFIGURACIÓN GENERAL */
+        
         body {
-            background-color: #0e1013; /* Negro azulado muy profundo */
-            color: #d8dce3;            /* Texto gris muy claro para lectura cómoda */
+            background-color: #0e1013;
+            color: #d8dce3;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* 2. BARRA DE NAVEGACIÓN SUPERIOR */
+       
         nav {
             background-color: #16191e;
             padding: 15px 30px;
-            border-bottom: 2px solid #9e2a2b; /* Línea roja elegante */
+            border-bottom: 2px solid #9e2a2b;
             text-align: center;
         }
 
@@ -28,14 +28,14 @@
             margin: 0 15px;
             font-weight: bold;
             font-size: 15px;
-            text-transform: uppercase; /* Convierte el texto a mayúsculas */
+            text-transform: uppercase;
         }
 
         nav a:hover {
-            color: #e09f3e; /* Cambia a dorado al pasar el ratón */
+            color: #e09f3e;
         }
 
-        /* 3. PORTADA PRINCIPAL (HERO) */
+        
         .portada {
             background-color: #1c2026;
             text-align: center;
@@ -57,18 +57,17 @@
             margin: 0 auto 25px auto;
         }
 
-        /* Estilo para la imagen principal de portada */
         .imagen-portada {
             width: 100%;
             max-width: 850px;
             height: 350px;
-            object-fit: cover; /* Evita que la foto se deforme o estire */
+            object-fit: cover;
             border-radius: 10px;
-            border: 2px solid #e09f3e; /* Marco dorado */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* Sombra profunda */
+            border: 2px solid #e09f3e;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
         }
 
-        /* 4. CONTENEDOR CENTRAL */
+        
         .contenedor {
             max-width: 960px;
             margin: 40px auto;
@@ -84,21 +83,21 @@
             padding-bottom: 10px;
         }
 
-        /* 5. TARJETAS DE HÉROES (Alineadas una al lado de la otra) */
+       
         .galeria-heroes {
-            display: flex;          /* Coloca las tarjetas en fila horizontal */
+            display: flex;
             justify-content: space-between;
-            gap: 20px;              /* Espacio entre cada tarjeta */
-            flex-wrap: wrap;        /* Si la pantalla es pequeña, bajan solas */
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .tarjeta-heroe {
             background-color: #181b20;
             border: 1px solid #2d333b;
             border-radius: 8px;
-            width: 30%;             /* Cada tarjeta ocupa casi un tercio del ancho */
+            width: 30%;
             min-width: 260px;
-            overflow: hidden;       /* Recorta la imagen para que respete los bordes redondeados */
+            overflow: hidden;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
@@ -119,7 +118,6 @@
             font-size: 20px;
         }
 
-        /* Etiqueta de atributo (Fuerza, Agilidad, Inteligencia) */
         .etiqueta {
             display: inline-block;
             background-color: #9e2a2b;
@@ -131,7 +129,7 @@
             font-weight: bold;
         }
 
-        /* 6. CAJA DE INFORMACIÓN EXTRA */
+        
         .caja-mapa {
             background-color: #181b20;
             padding: 30px;
@@ -140,7 +138,7 @@
             border-left: 5px solid #e09f3e;
         }
 
-        /* 7. PIE DE PÁGINA */
+        
         footer {
             background-color: #090a0c;
             color: #6c757d;
@@ -153,33 +151,26 @@
 </head>
 <body>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#heroes">Héroes Destacados</a>
         <a href="#objetivo">El Objetivo</a>
     </nav>
 
-    <!-- SECCIÓN DE PORTADA -->
     <section id="inicio" class="portada">
         <h1>EL CAMPO DE BATALLA DE LOS ANCESTROS</h1>
         <p>Más de 120 héroes únicos, estrategia infinita y trabajo en equipo puro. Cada partida es una historia completamente nueva.</p>
         
-        <!-- AQUÍ VA TU FOTO PRINCIPAL (Por ejemplo, una imagen panorámica del mapa o batalla) -->
         <img src="portada-dota.jpg" alt="Batalla épica en Dota 2" class="imagen-portada">
     </section>
 
-    <!-- CONTENIDO PRINCIPAL -->
     <div class="contenedor">
 
-        <!-- SECCIÓN DE 3 HÉROES -->
         <h2 id="heroes" class="titulo-seccion">Héroes Emblemáticos</h2>
         
         <div class="galeria-heroes">
             
-            <!-- TARJETA 1 -->
             <div class="tarjeta-heroe">
-                <!-- AQUÍ VA LA FOTO DEL HÉROE 1 -->
                 <img src="heroe1.jpg" alt="Foto del Héroe 1">
                 <div class="contenido-tarjeta">
                     <span class="etiqueta">AGILIDAD</span>
@@ -188,9 +179,7 @@
                 </div>
             </div>
 
-            <!-- TARJETA 2 -->
             <div class="tarjeta-heroe">
-                <!-- AQUÍ VA LA FOTO DEL HÉROE 2 -->
                 <img src="heroe2.jpg" alt="Foto del Héroe 2">
                 <div class="contenido-tarjeta">
                     <span class="etiqueta">INTELIGENCIA</span>
@@ -199,9 +188,7 @@
                 </div>
             </div>
 
-            <!-- TARJETA 3 -->
             <div class="tarjeta-heroe">
-                <!-- AQUÍ VA LA FOTO DEL HÉROE 3 -->
                 <img src="heroe3.jpg" alt="Foto del Héroe 3">
                 <div class="contenido-tarjeta">
                     <span class="etiqueta">FUERZA</span>
@@ -212,7 +199,6 @@
 
         </div>
 
-        <!-- SECCIÓN DEL OBJETIVO DEL JUEGO -->
         <div id="objetivo" class="caja-mapa">
             <h2>La Regla de Oro: Destruye el Ancestro</h2>
             <p>
@@ -224,7 +210,6 @@
 
     </div>
 
-    <!-- PIE DE PÁGINA -->
     <footer>
         <p>Diseñado con HTML y CSS estándar • Proyecto Web Dota 2</p>
     </footer>
