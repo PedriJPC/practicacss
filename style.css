@@ -1,0 +1,142 @@
+/* 1. CONFIGURACIÓN GENERAL */
+body {
+    background-color: #0e1013;
+    color: #d8dce3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. BARRA DE NAVEGACIÓN SUPERIOR */
+nav {
+    background-color: #16191e;
+    padding: 15px 30px;
+    border-bottom: 2px solid #9e2a2b;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #e09f3e;
+}
+
+/* 3. PORTADA PRINCIPAL */
+.portada {
+    background-color: #1c2026;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #2d333b;
+}
+
+.portada h1 {
+    color: #ffffff;
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.portada p {
+    color: #a0aab8;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.imagen-portada {
+    width: 100%;
+    max-width: 850px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e09f3e;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* 4. CONTENEDOR CENTRAL */
+.contenedor {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-seccion {
+    color: #e09f3e;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #2d333b;
+    padding-bottom: 10px;
+}
+
+/* 5. TARJETAS DE HÉROES */
+.galeria-heroes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-heroe {
+    background-color: #181b20;
+    border: 1px solid #2d333b;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 260px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tarjeta-heroe img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #9e2a2b;
+}
+
+.contenido-tarjeta {
+    padding: 20px;
+}
+
+.contenido-tarjeta h3 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: #9e2a2b;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* 6. CAJA DE INFORMACIÓN EXTRA */
+.caja-mapa {
+    background-color: #181b20;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    border-left: 5px solid #e09f3e;
+}
+
+/* 7. PIE DE PÁGINA */
+footer {
+    background-color: #090a0c;
+    color: #6c757d;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 1px solid #1f242b;
+}
