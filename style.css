@@ -1,4 +1,4 @@
-/* 1. CONFIGURACIÓN GENERAL */
+
 body {
     background-color: #0e1013;
     color: #d8dce3;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* 2. BARRA DE NAVEGACIÓN SUPERIOR */
+
 nav {
     background-color: #16191e;
     padding: 15px 30px;
@@ -28,7 +28,7 @@ nav a:hover {
     color: #e09f3e;
 }
 
-/* 3. PORTADA PRINCIPAL */
+
 .portada {
     background-color: #1c2026;
     text-align: center;
@@ -60,7 +60,7 @@ nav a:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
-/* 4. CONTENEDOR CENTRAL */
+
 .contenedor {
     max-width: 960px;
     margin: 40px auto;
@@ -76,7 +76,7 @@ nav a:hover {
     padding-bottom: 10px;
 }
 
-/* 5. TARJETAS DE HÉROES */
+
 .galeria-heroes {
     display: flex;
     justify-content: space-between;
@@ -122,7 +122,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* 6. CAJA DE INFORMACIÓN EXTRA */
+
 .caja-mapa {
     background-color: #181b20;
     padding: 30px;
